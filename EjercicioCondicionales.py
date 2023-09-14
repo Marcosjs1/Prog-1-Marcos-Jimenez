@@ -11,7 +11,7 @@ elif (dia == "Jueves") or (dia == "jueves"):
 elif (dia == "Viernes") or (dia == "jueves"):
     print("Ingles para viajeros")
 """Ejercicio parte 2"""
-dia_solicitado = input("Ingrese el dia,[DD/MM]: ")
+dia_solicitado = input("Ingrese el :[dia, DD/MM] ")
 sem = (dia_solicitado[0:dia_solicitado.find(",")])
 num = (dia_solicitado[dia_solicitado.find(" "): dia_solicitado.find("/")])
 num = int(num)
