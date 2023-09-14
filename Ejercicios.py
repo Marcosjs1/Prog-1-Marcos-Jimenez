@@ -5,7 +5,7 @@ print(numero1)
 numero2 = float(8.10)
 print(numero2)
 """Ejercicio 3"""
-suma = float(numero1 + numero2)
+suma = int(numero1 + numero2)
 print(suma)
 """Ejercicio 4"""
 mult = float(numero1*numero2)
