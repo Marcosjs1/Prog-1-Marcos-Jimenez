@@ -109,9 +109,11 @@ print(num[::-1])
 """Ejercicio 14"""
 A = int(input("Ingrese un numero: "))
 B = int(input("Ingrese un numero: "))
+C = int(0)
 print(f"El valor de A es: {A} y el valor de B es: {B}")
+C = A
 A = B
-B = A
+B = C
 print(f"Ahora el valor de A es: {A} y el valor de B es: {B}")
 
 """Ejercicio 15"""
@@ -155,8 +157,9 @@ año = int(input("Ingrese el año de su nacimiento: "))
 print(dia,"/",mes,"/",año)
 
 """Ejercicio 20"""
-fecha = [input("Ingrese el dia de nacimiento: "),input("Ingrese el mes de nacimiento: "),input("Ingrese el año de nacimiento: ")]
+fecha = [input("Ingrese el [DD/MM/AA]: ")]
 print(fecha)
+
 
 """Ejercicio 21"""
 recorrido = float(input("Indique la cantida KM que tiene que recorrer: "))
