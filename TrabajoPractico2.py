@@ -170,8 +170,11 @@ else:
 print("Ecuacion a resolver: a x + b = 0")
 valor_a = int(input("Ingrese el valor de a: "))
 valor_b= int(input("Ingrese el valor de b: "))
-valor_x = -valor_b / valor_a
-print(f"El valor de x es: {valor_x}")
+if (valor_a == 0) or (valor_b == 0):
+    print("Error")
+else:
+    valor_x = -valor_b / valor_a
+    print(f"El valor de x es: {valor_x}")
 # 15_Escriba un programa que pregunte primero si se quiere calcular el área de un triángulo o la de un círculo. Si se contesta que se quiere calcular el área de un triángulo (escribiendo T o t), el programa tiene que pedir entonces la base y la altura y escribir el área. Si se contesta que se quiere calcular el área de un círculo (escribiendo C o c), el programa tiene que pedir entonces el radio y escribir el área.
 preg =input("¿Que desea calcular? Si desea calcular el area de un triangulo ingrese [T o t] y si desea calcular el area de un circulo ingrese [C o c]: ")
 if preg.upper() == "T":
