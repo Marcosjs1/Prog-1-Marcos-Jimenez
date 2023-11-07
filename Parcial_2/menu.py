@@ -14,28 +14,23 @@ opc = int(input("Ingrese [0] para empezar: "))
 counter = 1
 #Definimos la variable en donde el se almacenaran los datos de la matriz
 matriz = []
+num = 0
 while opc == 0:
     if counter > 0:
         ADN_MUTANT(matriz)
-        if row_horizontal:
+        sequences = count_sequences(matriz)
+        if sequences > 1:
             print("-----------------------------------------")
             print("[ES MUTANTE]")
             print()
-            print("SE JUNTAN 4 LETRAS DE FORMA HORIZONTAL ")
+            print("SE ENCONTRARON MÁS DE UNA SECUENCIA DE 4 LETRAS IGUALES")
             print("-----------------------------------------")
             counter -= 1
-        elif column_vertical:
+        else:
             print("-----------------------------------------")
-            print("[ES MUTANTE]")
+            print("[NO ES MUTANTE]")
             print()
-            print("SE JUNTAN 4 LETTRAS DE FORMA VERTICAL ")
-            print("-----------------------------------------")
-            counter -= 1
-        elif diagonal:
-            print("-----------------------------------------")
-            print("[ES MUTANTE]")
-            print()
-            print("SE JUNTAN 4 LETRAS DE FORMA DIAGONAL")
+            print("NO SE ENCONTRARON SUFICIENTES SECUENCIAS DE 4 LETRAS IGUALES")
             print("-----------------------------------------")
             counter -= 1
     else:
